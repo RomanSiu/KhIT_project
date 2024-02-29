@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "khit-project"
+version = "0.1.0"
+description = ""
+authors = ["RomanSiu <siusiailoroman@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.27.1"}
+sqlalchemy = "^2.0.27"
+psycopg2 = "^2.9.9"
+alembic = "^1.13.1"
+mysqlclient = "^2.2.4"
+pydantic-extra-types = "^2.5.0"
+phonenumbers = "^8.13.31"
+pydantic = {extras = ["email"], version = "^2.6.3"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
